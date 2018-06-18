@@ -26,8 +26,8 @@ var newGreeting = function(name){
 //Name it finalGreeting.
 
 //Code Here
-finalGreeting() => "Hello, " + name;
 
+var finalGreeting = (name) => {return "Hello, " + name};
 
 //////////////////PROBLEM 4////////////////////
 
@@ -35,14 +35,24 @@ finalGreeting() => "Hello, " + name;
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
+var groceries = ["apples", "milk", "eggs", "bread"];
 
 //Write a function called doubleCheck that takes in an array
 //as a parameter.
+function doubleCheck(arr){
 
 //If the array does not contain "chocolate", add "chocolate".
 //doubleCheck should return the array.
 
 //Code Here
+
+
+  if (arr != "chocolate"){
+    arr.push("chocolate")
+  }
+return arr;
+};
+
 
 //////////////////PROBLEM 5////////////////////
 
