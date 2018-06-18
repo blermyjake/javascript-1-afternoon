@@ -46,8 +46,8 @@ function doubleCheck(arr){
 
 //Code Here
 
-
-  if (arr != "chocolate"){
+for( var i=0; i<arr.length; i++ )
+  if (arr[i] != "chocolate"){
     arr.push("chocolate")
   }
 return arr;
@@ -189,11 +189,17 @@ let pondScope = ["duck","realDuck"];
 //function which returns your name.
 
 //Code Here
+function outerFn(){
+  return function(){
+    return "Jeremy"};
+};
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
 //Code Here
+var innerFn = outerFn();
 
 //Now invoke innerFn and save the result to a variable called finalResult.
 
 //Code Here
+var finalResult = innerFn();
