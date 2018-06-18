@@ -51,7 +51,7 @@ function doubleCheck(arr){
     arr.push("chocolate")
   }
 return arr;
-}
+};
 
 
 //////////////////PROBLEM 5////////////////////
