@@ -62,20 +62,32 @@ return arr;
 //and goodBoy (a boolean).
 
 //Code Here
+var dog = {
+  name: "Mocha",
+  color: "Brown",
+  age: 5,
+  goodBoy: true
+};
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
 //Code Here
+var devMountainClassPet = dog.name;
 
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof".
 
 //Code Here
+dog.bark = function(){
+  return "Woof woof"
+};
 
 //Store the result of invoking the bark method in a variable called ruff.
 
 //Code Here
+var ruff = dog.bark();
+
 
 //////////////////PROBLEM 6////////////////////
 
