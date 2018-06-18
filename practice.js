@@ -101,6 +101,11 @@ var ruff = dog.bark();
 //Return mySum.
 
 //Code Here
+// function looper(arr);
+// var mySum = 0;
+// for (var i = 0; i<arr.length; i++){
+//   mySum[i]
+// };
 
 //////////////////PROBLEM 7////////////////////
 
@@ -114,11 +119,15 @@ function math(num1, num2, callback) {
 //returns the result of adding them together.
 
 //Code Here
+function add(num1, num2){
+  return (num1 + num2)
+};
 
 //Now invoke math, passing in the numbers 3 and 4, and your add function,
 //storing the result in the variable mathSum.
 
 //Code Here
+var mathSum = math(3,4,add)
 
 //////////////////PROBLEM 8////////////////////
 
@@ -134,7 +143,9 @@ function sampleCallbackTwo() {
 }
 
 //Code Here
-
+function invoker(callback){
+  return callback();
+};
 //////////////////PROBLEM 9////////////////////
 
 let duck = "cute";
